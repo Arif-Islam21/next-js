@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className="h-screen">{children}</div>
+        <div className="min-h-screen">{children}</div>
         <footer className="text-center text-black bg-cyan-400">
           All Right reserved by Arif telecom
         </footer>
