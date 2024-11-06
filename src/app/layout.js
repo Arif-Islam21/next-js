@@ -23,7 +23,17 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <nav className="flex justify-between px-12 pt-6">
+          <h6>LoGo</h6>
+          <ul className="flex gap-4">
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        <div className="h-screen">{children}</div>
+        <footer>All Right reserved by Arif telecom</footer>
       </body>
     </html>
   );
