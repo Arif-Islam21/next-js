@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="flex justify-between px-12 pt-6">
+        <nav className="flex justify-between bg-cyan-400 items-center px-12 text-black py-6">
           <h6>LoGo</h6>
           <ul className="flex gap-4">
             <li>About</li>
@@ -33,7 +33,9 @@ export default function RootLayout({ children }) {
           </ul>
         </nav>
         <div className="h-screen">{children}</div>
-        <footer>All Right reserved by Arif telecom</footer>
+        <footer className="text-center text-black bg-cyan-400">
+          All Right reserved by Arif telecom
+        </footer>
       </body>
     </html>
   );
