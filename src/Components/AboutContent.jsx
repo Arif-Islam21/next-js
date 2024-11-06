@@ -1,9 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
 export default function AboutContent() {
   return (
     <div>
-      <h2>THis is about content</h2>
+      <Link href="/history">History</Link>
+      <Link href="/mission">Mission</Link>
     </div>
   );
 }
