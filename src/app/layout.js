@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/Components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,15 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="flex justify-between bg-cyan-400 items-center px-12 text-black py-6">
-          <h6>LoGo</h6>
-          <ul className="flex gap-4">
-            <li>About</li>
-            <li>Service</li>
-            <li>Contact</li>
-            <li>Support</li>
-          </ul>
-        </nav>
+        <Navbar />
         <div className="h-screen">{children}</div>
         <footer className="text-center text-black bg-cyan-400">
           All Right reserved by Arif telecom
