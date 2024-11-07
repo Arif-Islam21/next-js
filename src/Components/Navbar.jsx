@@ -30,6 +30,19 @@ export default function Navbar() {
     },
   ];
 
+  if (pathName.includes("dashboard")) {
+    return (
+      <div className="flex justify-between bg-red-600 p-6">
+        <h2>Dashboard</h2>
+        <ul className="flex gap-4">
+          <li>Create User</li>
+          <li>Update User</li>
+          <li>Manage User</li>
+        </ul>
+      </div>
+    );
+  }
+
   return (
     <nav className="flex justify-between bg-cyan-400 items-center px-12 text-black py-6">
       <h6>LoGo</h6>
