@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
 export const middleware = (request) => {
-  return NextResponse.next();
+  return NextResponse.redirect(new URL("/about", request.url));
 };
 
 export const config = {
-  matcher: "/dashboard",
+  matcher: "/user-profile",
 };
