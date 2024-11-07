@@ -28,6 +28,10 @@ export default function Navbar() {
       title: "Contacts",
       path: "/Contacts",
     },
+    {
+      title: "Categories",
+      path: "/categories",
+    },
   ];
 
   if (pathName.includes("dashboard")) {
